@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.wrapper {
+  min-width: 570px;
+  max-width: 850px;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.material-icons {
+  display: block;
+  text-align: end;
+  color: red;
+  cursor: pointer;
+}
+
+.material-icons:active {
+  color: black;
+}
+
+.goods-wrapper, .goods-card-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.goods-card-wrapper {
+  flex-wrap: wrap;
+  align-content: space-between;
+  max-height: 1000px;
+}
+
+.goods-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F5F5F5;
+  padding: 0 10px;
+}
+
+.goods-card-container {
+  display: flex;
+  width: calc(100% / 3 - 13px);
+  justify-content: center;
+  flex-direction: column;
+  background-color: #F5F5F5;
+  gap: 7px;
+  padding: 10px;
+}
+
+.goods-img {
+  max-width: 130px;
+}
+
+.goods-name, .goods-color, .goods-price {
+  align-self: center;
+}
+
+.goods-name {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.goods-color {
+  color: red;
+  text-transform: uppercase;
+}
+
+.goods-price {
+  color: red;
+}
+
+.goods-add {
+  font-weight: 700;
+  color: red;
+  background-color: #F5F5F5;
+  border: 2px solid red;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.buy-card-container {
+  display: flex;
+  justify-content: space-between;
+}
